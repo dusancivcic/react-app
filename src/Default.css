@@ -1,0 +1,176 @@
+/* RESET */
+::-moz-selection {
+  background: var(--primary-color);
+  color: #fff;
+}
+::selection {
+  background: var(--primary-color);
+  color: #fff;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+*:focus {
+  outline: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/* width */
+::-webkit-scrollbar {
+  width: .5vw;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2c4696
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scrollbar-color: var(--secondary-color) #fff;
+  scrollbar-width: normal;
+}
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: 'Exo', sans-serif;
+  background-color: #1b203d;
+}
+body.no-scroll,
+html.no-scroll{
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+h1{
+  margin-bottom: 5rem;
+  font-size: 4rem;
+  color: #999;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: inherit;
+}
+button[disabled] {
+  cursor: default;
+}
+p{
+  line-height: 1.7;
+  color: var(--txt-color);
+}
+a{
+  color: var(--txt-color);
+}
+button[disabled]{
+  opacity: 0.5;
+}
+button{
+  transition: opacity 0.3s ease;
+}
+ul,
+ol {
+  list-style: none;
+}
+input,
+textarea {
+  font-family: inherit;
+  resize: none;
+}
+/* HIDE ARROWS ON NUMBER INPUTS */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* RESET */
+
+
+
+/* UTILITIES */
+:root {
+  --primary-color: #80b6ef;
+  --secondary-color: #F0F5FB;
+  --txt-color: #999;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  margin-top: 20rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.error-container{
+  background-color: rgba(252, 65, 65, 0.808);
+  width: 25rem;
+  border-radius: 1.5rem;
+  height: 8rem;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 1.7rem;
+  font-weight: 500;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 9999;
+  transform: translateX(30rem);
+  transition: transform 0.8s ease;
+}
+.error-container.active{
+  transform: translateX(0rem);
+}
+.error-container p{
+  color: #FFF;
+}
