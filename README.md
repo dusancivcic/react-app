@@ -1,6 +1,6 @@
-# Invoice tracer
+# Invoice tracker
 
-This is an react application that controls invoices, sellers and customers.
+This is a react application that controls invoices, sellers and customers.
 It contains three pages: Invoice, Sellers, Customers.
 Every page has options to add, edit or delete it's content.
 
@@ -8,14 +8,15 @@ Invoice contains the following fields: id, seller, customer, date, amount
 Seller contains the following fields: id, companyName, address, isActive
 Customer contains the following fields: id, name, surname, address, age
 
-The menu has three link that go on to one of the pages.
+The menu has three links that go on to one of the pages.
 Selected page icon changes background so we know it's selected.
 
 Validation notifications are showing up in the right upper corner with a error message if the validation is not correct.
+
 Validations:
 - Invoice amount must be larger than 0.
 - Invoice date can't be above the current date.
-- It's not possible to create an invoice with an non active seller.
+- It's not possible to create an invoice with a non active seller.
 - Every field on all forms need to be filled.
 - It's not possible to delete a customer or seller if they are on a invoice.
 ## Available Scripts
