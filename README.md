@@ -1,6 +1,6 @@
-# IME TVOJE APP
+# Ime aplikacije
 
-Lanaco app
+React application
 
 ## Available Scripts
 
